@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ViajaLibre · Tu agencia de viajes con IA</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: system-ui, -apple-system, sans-serif; background: #f8fafc; }
+    .gradient-accent { background: linear-gradient(135deg, #f97316 0%, #fb923c 100%); }
+    .gradient-ai { background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 50%, #f97316 100%); }
+    .ai-orb { background: conic-gradient(from 0deg, #8b5cf6, #ec4899, #f97316, #8b5cf6); animation: spin 3s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+  </style>
+</head>
+<body class="text-slate-800 flex flex-col min-h-screen">
 
+  <!-- Barra superior -->
+  <header class="bg-white border-b border-slate-200 px-6 py-4 flex items-center justify-between sticky top-0 z-10">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 gradient-accent rounded-xl flex items-center justify-center text-white font-bold text-xl">🌍</div>
+      <div>
+        <h1 class="font-bold text-lg text-slate-900">ViajaLibre</h1>
+        <p class="text-xs text-slate-500">Tu agencia de viajes con IA</p>
+      </div>
+    </div>
+    <button class="px-4 py-2 gradient-ai text-white rounded-xl text-sm font-semibold hover:opacity-90 flex items-center gap-2">
+      <span class="relative w-4 h-4"><span class="ai-orb absolute inset-0 rounded-full"></span></span>
+      Asistente IA Activo
+    </button>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="flex-1 p-6 max-w-4xl mx-auto w-full">
+    <div class="bg-gradient-to-br from-purple-600 via-pink-500 to-orange-400 rounded-2xl p-8 text-white mb-8 text-center">
+      <h2 class="text-3xl font-bold mb-3">¿Listo para tu próxima aventura?</h2>
+      <p class="text-white/90 mb-6 text-lg">Dinos a dónde quieres ir y nuestra IA generará tu itinerario perfecto en segundos.</p>
+      <div class="flex flex-col sm:flex-row gap-3 justify-center max-w-lg mx-auto">
+        <input type="text" placeholder="Ej: Quiero ir a París 5 días..." class="flex-1 px-4 py-3 rounded-xl text-slate-900 focus:outline-none focus:ring-2 focus:ring-white/50" />
+        <button class="px-6 py-3 bg-white text-purple-700 rounded-xl font-bold hover:bg-purple-50 transition">✨ Generar</button>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+        <div class="text-3xl mb-3">🗺️</div>
+        <h3 class="font-bold text-lg mb-2">Itinerarios IA</h3>
+        <p class="text-sm text-slate-600">Planes día a día personalizados según tus gustos y presupuesto.</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+        <div class="text-3xl mb-3">💰</div>
+        <h3 class="font-bold text-lg mb-2">Presupuestos</h3>
+        <p class="text-sm text-slate-600">Cálculos automáticos de vuelos, hoteles, comida y actividades.</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+        <div class="text-3xl mb-3">📍</div>
+        <h3 class="font-bold text-lg mb-2">Rutas Inteligentes</h3>
+        <p class="text-sm text-slate-600">Optimiza tus paradas para ahorrar tiempo y dinero en cada viaje.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="text-center py-6 text-sm text-slate-500 border-t border-slate-200 mt-auto">
+    <p>© 2026 ViajaLibre · Desarrollado con ❤️ e Inteligencia Artificial</p>
+  </footer>
+
+</body>
+</html>
